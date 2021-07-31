@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "internet-banking-angular"
+    }
+  },
+  "defaultProject": "internet-banking-angular",
+  "cli": {
+    "analytics": false
+  }
 }
