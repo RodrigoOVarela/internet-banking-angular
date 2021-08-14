@@ -9,13 +9,15 @@ import { HeaderComponent } from './component/header/header.component';
 import { ContentComponent } from './component/content/content.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { AppRoutingModule  } from './app-routing/app-routing.module';
+import { CustomerRegistrationComponent } from './customer-registration/customer-registration.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    CustomerRegistrationComponent
   ],
   imports: [
     BrowserModule,
