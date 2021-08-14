@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
@@ -8,6 +8,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { HeaderComponent } from './component/header/header.component';
 import { ContentComponent } from './component/content/content.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { AppRoutingModule  } from './app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,8 +21,10 @@ import { FooterComponent } from './component/footer/footer.component';
     BrowserModule,
     BrowserAnimationsModule,
     MatDialogModule,
+    AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
