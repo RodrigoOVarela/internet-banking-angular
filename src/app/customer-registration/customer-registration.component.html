@@ -2,22 +2,22 @@
     <div class="row box-register">
         <div class="col-12">
             <h3 class="text-center">Você está a um passo de criar sua conta Training Banking</h3>
-            <form class="mt-5">
+            <form class="mt-5" (ngSubmit)="register()" [formGroup]="formRegister">
                 <div class="form-group">
                     <input type="text" class="form-control register" id="exampleInputEmail1"
-                        aria-describedby="emailHelp" placeholder="Nome">
+                        aria-describedby="emailHelp" placeholder="Nome" formControlName="name">
                 </div>
                 <div class="form-group">
-                    <input type="number" class="form-control register" id="number" placeholder="CPF">
+                    <input type="number" class="form-control register" id="number" placeholder="CPF" formControlName="cpf">
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control register" id="email" placeholder="E-mail">
+                    <input type="email" class="form-control register" id="email" placeholder="E-mail" formControlName="email">
                 </div>
                 <div class="form-group">
-                    <input type="tel" class="form-control register" id="phone" placeholder="Telefone">
+                    <input type="tel" class="form-control register" id="phone" placeholder="Telefone" formControlName="phone">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control register" id="address" placeholder="Endereço">
+                    <input type="text" class="form-control register" id="address" placeholder="Endereço" formControlName="address">
                 </div>
                 <button type="submit" class="btn btn-register btn-lg">Cadastrar</button>
             </form>
